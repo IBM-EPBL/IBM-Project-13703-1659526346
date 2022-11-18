@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="expensestatus">
+    <h4 class="expensestatus_head">Expenses Status Bar</h4>
+    <div class="row expensestatusrow">
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/home.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Home</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:60%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/education.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Education</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:30%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row expensestatusrow">
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/shopping.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Shopping</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:20%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/transport.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Transport</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:45%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row expensestatusrow">
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/medical.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Medical</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:10%"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 expensestatuscard">
+            <div class="expensestatusbar">
+                <img src="{{ url_for('static', filename='media/entertainment.png') }}" alt="#" class="expensestatusbaricon">
+                <h6 class="expensestatushead">Entertainment</h6><br>
+                <div class="progress expensestatusprogress">
+                    <div class="progress-bar" style="width:20%"></div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <a class="addcategorybacklink" href="/addcategory">Back</a>
+</div>
+
+{% endblock %}
